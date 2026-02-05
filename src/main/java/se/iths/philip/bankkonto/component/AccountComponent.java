@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class AccountComponent {
-
+    //Saldot skapas
     private int saldo = 0;
 
     //Deposit för att sätta in på saldo

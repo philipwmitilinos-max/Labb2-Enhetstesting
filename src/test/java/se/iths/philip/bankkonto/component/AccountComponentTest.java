@@ -54,5 +54,10 @@ public class AccountComponentTest {
     @Test
     public void testPutInAndOutFromAccount() {
         //Testar att sätta in och att ta ut ifrån saldot. (Jag behöver inte göra det här testet)
+        accountComponent.deposit(1000);
+        accountComponent.withdraw(400);
+        accountComponent.withdraw(250);
+        assertEquals("Saldo ska minskat två gånger", 350,
+                accountComponent.getSaldo());
     }
 }
