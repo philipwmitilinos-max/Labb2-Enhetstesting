@@ -18,7 +18,7 @@ public class ATMService {
     }
 
     public void deposit(int amount) {
-        //Ser till att insättnings beloppet inte är 0 eller mindre.
+        //Ser till att insättningsbeloppet inte är 0 eller mindre.
         if (amount <= 0) {
             throw new InvalidAmountException("Belopp måste vara större än 0");
         }
@@ -26,7 +26,7 @@ public class ATMService {
     }
 
     public void withdraw(int amount) {
-        //Ser till att uttags beloppet inte är 0 eller mindre.
+        //Ser till att uttagsbeloppet inte är 0 eller mindre.
         if (amount <= 0) {
             throw new InvalidAmountException("Belopp måste vara större än 0");
         }
